@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Reservation</title>
+    <link rel="stylesheet" href="hotel.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="sect1">
+        <h1>Tradez Inn</h1>
+        <p>Comfort, Meal and Satisfaction</p>
+      </div>
+
+      <div class="sect2">
+        <br />
+        <br />
+        <p>+234-701-277-5103</p>
+      </div>
+    </header>
+    <nav>
+      <div class="btns">
+        <button class="active" onclick="getSuite(1)">Southern Serenade</button>
+        <button onclick="getSuite(2)">Enchanted Escape</button>
+        <button onclick="getSuite(3)">Sandy Suite</button>
+      </div>
+      <span id="icons">
+        <i class="fa fa-1.5x fa-bars"></i>
+      </span>
+    </nav>
+
+    <main>
+      <div class="SuiteName">
+        Suite Name
+      </div>
+      <div class="SuiteDesc">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+        recusandae neque nisi tenetur qui delectus dolorum debitis nostrum,
+        libero, doloremque perferendis fuga, perspiciatis exercitationem fugiat.
+        Distinctio illum id ipsum aut.
+      </div>
+
+      <img src="images/placeholder.jpg" alt="placeholder" />
+    </main>
+
+    <article>
+      <div class="cost">
+        <h4>Costs</h4>
+        <p class="weekday"></p>
+        <p class="weekend"></p>
+      </div>
+
+      <div class="Amenities">
+        <h4>Amenities</h4>
+        <p class="amenities"></p>
+      </div>
+    </article>
+    <div class="reserve">
+      <a href="#">Make A Reservation</a>
+    </div>
+    <footer>
+      &copy; 2021 Coded and Designed By Wealth Iduwe
+    </footer>
+    <script src="hotel.js"></script>
+  </body>
+</html>

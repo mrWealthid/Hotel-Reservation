@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Caudex&family=Darker+Grotesque&family=Gruppo&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Caudex";
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  background-color: chocolate;
+  padding: 10px;
+  font-family: "Caudex";
+  color: wheat;
+  width: 100%;
+}
+
+h1::first-letter {
+  font-size: 50px;
+  font-family: "Grotesque";
+}
+
+nav {
+  background-color: burlywood;
+  text-align: center;
+  display: flex;
+  width: 100%;
+}
+button {
+  background-color: burlywood;
+  font-weight: 700;
+  height: 50px;
+  width: 28%;
+  margin-right: -6px;
+  border: none;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+  font-size: large;
+  font-family: "Gruppo", cursive;
+}
+
+button:hover,
+.active {
+  background-color: wheat;
+}
+
+.SuiteName {
+  padding: 20px;
+  font-size: xxx-large;
+  color: chocolate;
+}
+
+.SuiteDesc {
+  padding: 25px;
+  font-size: larger;
+}
+main {
+  text-align: center;
+}
+
+article {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-evenly;
+  margin: 50px 0px;
+}
+.btns {
+  flex-basis: 90%;
+}
+footer {
+  text-align: center;
+  background-color: chocolate;
+  padding: 20px;
+  font-weight: 600;
+  color: wheat;
+}
+.cost,
+.Amenities {
+  font-size: larger;
+  font-weight: bold;
+}
+.cost h4,
+.Amenities h4 {
+  font-weight: 600;
+  color: chocolate;
+}
+
+a {
+  background-color: chocolate;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+}
+
+a:hover {
+  background-color: white;
+  color: chocolate;
+  border: 1px solid chocolate;
+}
+#icons {
+  display: none;
+}
+
+.reserve {
+  margin-bottom: 40px;
+  margin-left: 70px;
+}
+
+@media (max-width: 750px) {
+  .btns {
+    visibility: hidden;
+    flex-basis: 95%;
+    height: 0px;
+    transition: 1s;
+  }
+  nav {
+    background-color: white;
+  }
+  #icons {
+    display: block;
+  }
+  button {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: white;
+    color: black;
+    background-color: transparent;
+  }
+  button:hover,
+  .active {
+    background-color: transparent;
+    color: chocolate;
+  }
+
+  a {
+    width: 100%;
+  }
+  img {
+    max-width: 85%;
+  }
+
+  .show {
+    visibility: visible;
+    height: 130px;
+    transition: 1s;
+  }
+  article {
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    grid-template-columns: auto auto;
+    grid-gap: 40px 0px;
+  }
+  .reserve {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 0px;
+  }
+}
