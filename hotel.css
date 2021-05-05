@@ -14,26 +14,29 @@ body {
 header {
   display: flex;
   justify-content: space-around;
-  background-color: chocolate;
+  color: rgb(170, 73, 5);
   padding: 10px;
-  font-family: "Caudex";
-  color: wheat;
+  font-family: "Gruppo";
   width: 100%;
+  font-size: large;
+  font-variant: small-caps;
+  font-weight: 800;
+  border-bottom: 1px solid rgb(170, 73, 5);
 }
 
-h1::first-letter {
+/* h1::first-letter {
   font-size: 50px;
   font-family: "Grotesque";
-}
+} */
 
 nav {
-  background-color: burlywood;
+  background-color: rgb(170, 73, 5);
   text-align: center;
   display: flex;
   width: 100%;
 }
 button {
-  background-color: burlywood;
+  background-color: rgb(170, 73, 5);
   font-weight: 700;
   height: 50px;
   width: 28%;
@@ -43,17 +46,22 @@ button {
   border-right: 1px solid grey;
   font-size: large;
   font-family: "Gruppo", cursive;
+  outline: none;
+  color: white;
+  transition: 1s;
 }
 
-button:hover,
-.active {
-  background-color: wheat;
+button:hover {
+  background-color: white;
+  color: rgb(170, 73, 5);
+  border: 1px solid rgb(170, 73, 5);
 }
 
 .SuiteName {
   padding: 20px;
   font-size: xxx-large;
-  color: chocolate;
+  color: rgb(170, 73, 5);
+  text-align: center;
 }
 
 .SuiteDesc {
@@ -66,7 +74,7 @@ main {
 
 article {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto;
   justify-content: space-evenly;
   margin: 50px 0px;
 }
@@ -75,7 +83,7 @@ article {
 }
 footer {
   text-align: center;
-  background-color: chocolate;
+  background-color: rgb(170, 73, 5);
   padding: 20px;
   font-weight: 600;
   color: wheat;
@@ -83,7 +91,6 @@ footer {
 .cost,
 .Amenities {
   font-size: larger;
-  font-weight: bold;
 }
 .cost h4,
 .Amenities h4 {
@@ -92,19 +99,21 @@ footer {
 }
 
 a {
-  background-color: chocolate;
+  background-color: rgb(170, 73, 5);
   padding: 10px;
   border-radius: 5px;
   color: white;
+  transition: 1s;
 }
 
 a:hover {
   background-color: white;
-  color: chocolate;
-  border: 1px solid chocolate;
+  color: rgb(170, 73, 5);
+  border: 1px solid rgb(170, 73, 5);
 }
 #icons {
   display: none;
+  color: rgb(170, 73, 5);
 }
 
 .reserve {
@@ -115,9 +124,9 @@ a:hover {
 @media (max-width: 750px) {
   .btns {
     visibility: hidden;
-    flex-basis: 95%;
+    flex-basis: 92%;
     height: 0px;
-    transition: 1s;
+    transition: 0.5s;
   }
   nav {
     background-color: white;
@@ -133,10 +142,10 @@ a:hover {
     color: black;
     background-color: transparent;
   }
-  button:hover,
-  .active {
+  button:hover {
     background-color: transparent;
     color: chocolate;
+    border: none;
   }
 
   a {
@@ -152,14 +161,18 @@ a:hover {
     transition: 1s;
   }
   article {
-    grid-template-columns: auto auto;
-    grid-gap: 10px;
-    grid-template-columns: auto auto;
+    grid-template-columns: 30% auto;
     grid-gap: 40px 0px;
   }
   .reserve {
     text-align: center;
     margin-bottom: 20px;
     margin-left: 0px;
+  }
+  .sect2 {
+    display: none;
+  }
+  header {
+    text-align: center;
   }
 }
