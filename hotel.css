@@ -21,9 +21,12 @@ header {
   font-size: large;
   font-variant: small-caps;
   font-weight: 800;
-  border-bottom: 1px solid rgb(170, 73, 5);
+  border-bottom: 1px solid rgb(146, 93, 55);
 }
 
+.sect1 {
+  text-shadow: 2px 2px 3px gray;
+}
 /* h1::first-letter {
   font-size: 50px;
   font-family: "Grotesque";
@@ -55,6 +58,7 @@ button:hover {
   background-color: white;
   color: rgb(170, 73, 5);
   border: 1px solid rgb(170, 73, 5);
+  outline: none;
 }
 
 .SuiteName {
